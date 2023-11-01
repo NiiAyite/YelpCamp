@@ -1,0 +1,112 @@
+@import url(./style.css);
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 4.5rem;
+    width: 700px;
+    margin-top: 6rem;
+}
+
+a {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1.2rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.info {
+    margin-left: 10rem;
+}
+    
+.text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 450px;
+}
+
+.point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.last {
+    margin-bottom: 3rem;
+}
+
+.point p {
+    margin-left: .5rem;
+}
+
+.logo {
+    margin-top: 5rem;
+    width: 150px;
+}
+
+.hero-image {
+    position: relative;
+    width: 850px;
+}
+
+.hero-image-small {
+    display: none;
+}
+
+.partner-title {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y: scroll;
+        max-width: 768px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .hero-image-small {
+        display: block;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .logo {
+        margin: 2rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 1rem 1rem 2rem;
+    }
+
+    p {
+        font-size: 24px;
+        width: 600px;
+    }
+
+    .text, .point, a, .partner-title, .partners {
+        margin-left: 2rem;
+    }
+
+    .text {
+        width: 700px;
+    }
+
+    .info {
+        margin: 0;
+    }
+}

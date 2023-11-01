@@ -1,0 +1,251 @@
+@import url(./style.css);
+
+body {
+    overflow: hidden;
+}
+
+.banner {
+    text-align: center;
+    background-color: var(--black);
+    padding: .5rem;
+    font-weight: 200;
+}
+
+h3, .banner img {
+    color: var(--white);
+    display: inline;
+}
+
+.banner img {
+    margin-left: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    display: none;
+}
+
+.dropdown a {
+    margin-bottom: 1rem;
+}
+
+.dropdown .create {
+    width: 130px;
+    margin: 0;
+}
+
+.menu {
+    background-color: var(--sand);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 2rem;
+}
+
+.left a {
+    color: var(--black);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.username {
+    margin-right: 2rem;
+    font-weight: 700;
+}
+
+label {
+    color: var(--black);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input {
+    padding: 1rem;
+    width: 30rem;
+    border: none;
+    background-color: var(--sand);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    outline: var(--black);
+}
+
+textarea {
+    background-color: var(--sand);
+    padding: 1rem;
+    max-width: 30rem;
+    width: 30rem;
+    max-height: 10rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.add {
+    display: block;
+    color: var(--white);
+    background-color: var(--black);
+    width: 30rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+main {
+    position: relative;
+    left: 40rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    margin-left: 5rem;
+    margin-top: 6rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-y: visible;
+    }
+    nav, main {
+        padding: 0 2rem;
+    }
+
+    .welcome {
+        margin: 0 2rem;
+    }
+
+    nav .right {
+        display: none;
+    }
+
+    .dropdown {
+        left: 29.5rem;
+        bottom: 4rem;
+        border-radius: 5px;
+        background: var(--white);
+        padding: 2rem;
+    }
+
+    .close {
+        position: relative;
+        display: none;
+    }
+
+    .dropdown .home-dropdown {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu img {
+        width: 100%;
+    }
+
+    .username {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        left: 0;
+    }
+
+    footer {
+        margin: 2rem 0 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner img {
+        margin-left: 1rem;
+    }
+
+    nav .left a {
+        display: none;
+    }
+
+    nav {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    nav, main {
+        padding: 0 1rem;
+    }
+
+    .dropdown {
+        display: flex;
+        left: 7.8rem;
+        top: -1rem;
+        border-radius: 5px;
+        background: var(--white);
+        display: none;
+    }
+
+    .close {
+        position: relative;
+        display: none;
+    }
+
+    .dropdown .home-dropdown {
+        display: block;
+    }
+
+    input {
+        width: 18rem;
+    }
+
+    textarea {
+        max-width: 18rem;
+    }
+
+    .add {
+        width: 18rem;
+    }
+
+    footer {
+        margin-left: 1rem;
+    }
+}
