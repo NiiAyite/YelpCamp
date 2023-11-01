@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp | Add Campground</title>
+    <link rel="icon" href="../Assets/Logo.svg">
+    <link rel="stylesheet" href="../css/addcampground.css">
+</head>
+<body>
+    <div class="banner" id="banner">
+        <h3>This project was made by Nii Ayite</h3>
+        <img src="../Assets/Close.svg" alt="" id="clear">
+    </div>
+
+    <nav>
+        <div class="left">
+            <div class="logo">
+                <img src="../Assets/Logo.svg" alt="">
+            </div>
+            <a href="../index.html">Home</a>
+        </div>
+
+        <div class="right">
+            <p class="username">johndoe</p>
+            <p class="logout">Logout</p>
+        </div>
+
+        <div class="menu" id="menu">
+            <img src="../Assets/Hamburger Menu.svg" alt="" id="open">
+            <img src="../Assets/Close.svg" alt="" id="close" class="close">
+        </div>
+    </nav>
+
+    <div class="dropdown" id="dropdown">
+        <a href="../index.html" class="home-dropdown">Home</a>
+        <p class="username">johndoe</p>
+        <p class="logout">Logout</p>
+    </div>
+
+    <main>
+        <h1>Add New Campground</h1>
+        <label for="name">Campground Name</label>
+        <input type="text" placeholder="Seven Sisters Waterfall" id="name">
+
+        <label for="price">Price</label>
+        <input type="text" placeholder="$149" id="price">
+
+        <label for="image">Image</label>
+        <input type="text" placeholder="www.thepinoytraceller.com" id="image">
+
+        <label for="description">Description</label>
+        <textarea name="Description" id="description" cols="30" rows="10" maxlength="1000" placeholder="The Seven Sisters is the 39th tallest waterfall in Norway."></textarea>
+
+        <a href="SearchPageLogged.html" class="add">Add Campground</a>
+    </main>
+
+    <footer>
+        <img src="../Assets/Logo.svg" alt="">
+    </footer>
+</body>
+<script src="../js/dropdown.js"></script>
+<script src="../js/clearbanner.js"></script>
+</html>
